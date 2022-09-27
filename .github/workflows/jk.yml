@@ -23,7 +23,7 @@ on:
 jobs:
   # This workflow contains a single job called "greet"
   job1:
-  
+
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -34,7 +34,7 @@ jobs:
             python-version: '3.10' 
 
     # Runs a single command using the runners shell
-    - name: Send greeting
-      run:  |
-          python oddeven.py ${{ github.event.inputs.first-value }} ${{ github.event.inputs.first-value }}
+      - name: Send greeting
+        run:  |
+            python oddeven.py ${{ github.event.inputs.first-value }} ${{ github.event.inputs.first-value }}
 
