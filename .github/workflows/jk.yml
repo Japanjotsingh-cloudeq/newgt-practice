@@ -23,6 +23,7 @@ on:
 jobs:
   # This workflow contains a single job called "greet"
   job1:
+  
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
