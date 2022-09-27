@@ -36,5 +36,5 @@ jobs:
     # Runs a single command using the runners shell
       - name: input
         run:  |
-            python prime.py ${{ github.event.inputs.first-value }} ${{ github.event.inputs.first-value }}
+            python oddeven.py ${{ github.event.inputs.first-value }} ${{ github.event.inputs.first-value }}
 
