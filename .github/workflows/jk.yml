@@ -34,7 +34,7 @@ jobs:
             python-version: '3.10' 
 
     # Runs a single command using the runners shell
-      - name: Send greeting
+      - name: input
         run:  |
-            python oddeven.py ${{ github.event.inputs.first-value }} ${{ github.event.inputs.first-value }}
+            python prime.py ${{ github.event.inputs.first-value }} ${{ github.event.inputs.first-value }}
 

@@ -1,7 +1,7 @@
-print("enter first number")
-a=int(input())
-print("enter last number")
-b=int(input())
+import sys
+
+a = int(sys.argv[1])
+b= int(sys.argv[2])
 oddlist=[]
 evenlist=[]
 for x in range(a,b):
