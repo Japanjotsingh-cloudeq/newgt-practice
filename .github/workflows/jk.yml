@@ -8,12 +8,15 @@ on:
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
-      name:
+      first-value:
         # Friendly description to be shown in the UI instead of 'name'
-        description: 'Person to greet'
+        description: 'enter a number'
         # Default value if no value is explicitly provided
-        default: 'World'
+        # default: '0'
         # Input has to be provided for the workflow to run
+        required: true
+      second-value:
+        description: 'enter a number'
         required: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -27,4 +30,6 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name }}"
+      run:  |
+          oddeven.py ${{ github.event.inputs.first-value }} ${{ github.event.inputs.first-value }}
+
