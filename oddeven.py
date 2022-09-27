@@ -5,7 +5,7 @@ b = int(sys.argv[2])
 
 for x in range(a,b):
     if(x%2!=0):
-        print("even",x)
+        print("even")
     else:
         print("odd")
 # sum = a + b
