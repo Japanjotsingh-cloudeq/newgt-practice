@@ -37,4 +37,6 @@ jobs:
       - name: input
         run:  |
             python oddeven.py ${{ github.event.inputs.first-value }} ${{ github.event.inputs.second-value }}
+            python prime.py ${{ github.event.inputs.first-value }} ${{ github.event.inputs.second-value }}
+
 
